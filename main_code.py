@@ -152,7 +152,7 @@ hour=get_hour(hour_angle)
 minute=get_minsec(minute_angle)
 second=get_minsec(second_angle)
 
-#Displaying TIme
+#Displaying Time
 time_display="The time is: "+str(hour)+":"+str(minute)+":"+str(second)
 
 cv2.putText(img,time_display, (centre[0]-150,centre[1]+50), font, 1, (0, 0, 255), 2, cv2.LINE_AA)
@@ -160,3 +160,4 @@ cv2.putText(img,time_display, (centre[0]-150,centre[1]+50), font, 1, (0, 0, 255)
 cv2.imshow('Final',img)
 
 cv2.waitKey(0)
+
